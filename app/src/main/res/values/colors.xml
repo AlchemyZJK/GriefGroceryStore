@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Theme Color -->
+    <color name="colorPrimary">#FAB7AA</color>
+    <color name="colorPrimaryDark">#DB767A</color>
+    <color name="colorAccent">#755E7E</color>
+
+    <!-- Shape White Text -->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- Normal Background Color -->
+    <color name="normal_background_color">#FCE8D7</color>
+
+    <!-- List Color -->
+    <color name="list_item_background_color">#DB767A</color>
+    <color name="list_item_line_color">#FAB7AA</color>
+
+</resources>

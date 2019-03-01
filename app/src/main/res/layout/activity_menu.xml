@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/top_bar_text"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/top_bar"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/button_write"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/tab_menu_write_normal"
+            android:contentDescription="@string/imageButton_text_write" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_firstpage"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tab_menu_firstpage"
+            android:text="@string/tab_menu_text_firstpage"/>
+        <RadioButton
+            android:id="@+id/radioButton_mailbox"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tab_menu_mailbox"
+            android:text="@string/tab_menu_text_mailbox"/>
+        <RadioButton
+            android:id="@+id/radioButton_user"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tab_menu_user"
+            android:text="@string/tab_menu_text_user"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radioGroup_menu"
+        android:layout_below="@id/top_bar">
+
+    </FrameLayout>
+
+</RelativeLayout>

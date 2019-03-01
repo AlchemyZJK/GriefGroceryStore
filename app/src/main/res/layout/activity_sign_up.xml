@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <!-- 顶部导航栏 -->
+    <TextView
+        android:id="@+id/sign_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/top_bar"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <!-- 圆形头像 -->
+    <ImageView
+        android:id="@+id/user_sign_up_image_male"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/user_boy"/>
+    <ImageView
+        android:id="@+id/user_sign_up_image_female"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/user_girl"
+        android:visibility="invisible"/>
+
+    <!-- 邮箱输入框 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/shape_white_text">
+
+        <TextView
+            android:id="@+id/textView_mail_address"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:text="@string/mail_address"
+            android:textColor="@color/colorAccent"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <View
+            android:id="@+id/view_vertical_line1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@id/textView_mail_address"
+            android:layout_toRightOf="@id/textView_mail_address"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText_mail_address_up"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/view_vertical_line1"
+            android:layout_toRightOf="@id/view_vertical_line1"
+            android:ems="18"
+            android:hint="@string/mail_address_hint"
+            android:inputType="textEmailAddress"
+            android:padding="1dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <!-- 笔名输入框 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/shape_white_text">
+
+        <TextView
+            android:id="@+id/textView_pen_name"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:text="@string/pen_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <View
+            android:id="@+id/view_vertical_line2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@id/textView_pen_name"
+            android:layout_toRightOf="@id/textView_pen_name"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText_pen_name_up"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/view_vertical_line2"
+            android:layout_toRightOf="@id/view_vertical_line2"
+            android:ems="12"
+            android:hint="@string/pen_name_hint"
+            android:inputType="text"
+            android:padding="1dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <!-- 密码输入框 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/shape_white_text">
+
+        <TextView
+            android:id="@+id/textView_password"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:text="@string/password"
+            android:textColor="@color/colorAccent"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <View
+            android:id="@+id/view_vertical_line3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@id/textView_password"
+            android:layout_toRightOf="@id/textView_password"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText_password_up"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/view_vertical_line3"
+            android:layout_toRightOf="@id/view_vertical_line3"
+            android:ems="18"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="1dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <!-- 确认密码输入框 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/shape_white_text">
+
+        <TextView
+            android:id="@+id/textView_password_check"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:text="@string/password_check"
+            android:textColor="@color/colorAccent"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <View
+            android:id="@+id/view_vertical_line4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@id/textView_password_check"
+            android:layout_toRightOf="@id/textView_password_check"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText_password_check_up"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/view_vertical_line4"
+            android:layout_toRightOf="@id/view_vertical_line4"
+            android:ems="18"
+            android:hint="@string/password_check_hint"
+            android:inputType="textPassword"
+            android:padding="1dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <!-- 性别选择按钮 -->
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="352dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/male"
+            android:textColor="@color/colorAccent" />
+        <RadioButton
+            android:id="@+id/radioButton_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/female"
+            android:textColor="@color/colorAccent" />
+    </RadioGroup>
+
+    <!-- 注册按钮 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="142dp">
+
+        <Button
+            android:id="@+id/button_sign_up_back"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorAccent"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

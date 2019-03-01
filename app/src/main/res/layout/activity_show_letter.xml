@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowLetterActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_show"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/top_bar_show_text"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/top_bar_show_letter"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/button_show_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/icon_back"
+            android:contentDescription="@string/imageButton_text_back" />
+
+        <ImageButton
+            android:id="@+id/button_show_write"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/tab_menu_write_normal"
+            android:contentDescription="@string/imageButton_text_write" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar_show"
+        android:background="@drawable/background_letter">
+
+        <TextView
+            android:id="@+id/show_letter_content"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="46dp"
+            android:background="@null"
+            android:lineSpacingExtra="16dp"
+            android:text="@string/show_letter_default"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
